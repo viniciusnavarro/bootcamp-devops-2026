@@ -1,0 +1,23 @@
+aulas/aula-04-linux-shell-script/pratica.md
+  s_9c16f788cb17f7::t_6b159844a00344 142-143
+aulas/aula-04-linux-shell-script/slides/aula-04.json
+  s_9c16f788cb17f7::t_cb8ade067332c4 395
+aulas/aula-05-devops-pipelines/pratica.md
+  s_9c16f788cb17f7::t_d3b88e66d092a9 147-150,162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "31b47fa66494da38f8b4355216eff6630e4b0dad",
+  "prompts": {},
+  "sessions": {
+    "s_9c16f788cb17f7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "203c86cd-f701-429d-84b9-3edf62d1ba65",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
