@@ -1,0 +1,29 @@
+recursos/cheat-sheet-git.md
+  s_3d6ee04a66b39d::t_f94bcdeb1127ca 105-106,149
+recursos/cheat-sheet-github.md
+  s_3d6ee04a66b39d::t_759de2fdf2928e 1-151
+aulas/aula-09-github/README.md
+  s_3d6ee04a66b39d::t_f94bcdeb1127ca 40-41
+README.md
+  s_3d6ee04a66b39d::t_8d0455067f1829 53
+glossario.md
+  s_3d6ee04a66b39d::t_f94bcdeb1127ca 57
+recursos/cheat-sheet-docker.md
+  s_3d6ee04a66b39d::t_f94bcdeb1127ca 212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3cf24b308f6afb3bf4c9a09d2d10c94c1a4de8a5",
+  "prompts": {},
+  "sessions": {
+    "s_3d6ee04a66b39d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26ad2d05-6dda-4a90-a9e9-356683292e32",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
