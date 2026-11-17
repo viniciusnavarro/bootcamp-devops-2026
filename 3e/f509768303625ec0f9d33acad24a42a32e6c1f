@@ -1,0 +1,27 @@
+aulas/aula-09-github/slides/aula-09.json
+  s_3d6ee04a66b39d::t_69dabfa90071ad 34,215,242,307-312,315-319,324,331-332,460,464
+  s_3d6ee04a66b39d::t_a74f33f12b3e17 313-314
+aulas/aula-09-github/pratica.md
+  s_3d6ee04a66b39d::t_ab58ca7b74a618 138-139
+  s_3d6ee04a66b39d::t_f94bcdeb1127ca 7-8,142
+  s_3d6ee04a66b39d::t_e02e940efd4e06 41,45-56
+  s_3d6ee04a66b39d::t_ac921f94ddf1a4 143
+tools/slides/README.md
+  s_3d6ee04a66b39d::t_8d0455067f1829 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3ef509768303625ec0f9d33acad24a42a32e6c1f",
+  "prompts": {},
+  "sessions": {
+    "s_3d6ee04a66b39d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26ad2d05-6dda-4a90-a9e9-356683292e32",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
