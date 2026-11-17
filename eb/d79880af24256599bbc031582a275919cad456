@@ -1,0 +1,23 @@
+aulas/aula-09-github/slides/aula-09.json
+  s_3d6ee04a66b39d::t_003049d6bf3fb9 290,292
+recursos/cheat-sheet-github.md
+  s_3d6ee04a66b39d::t_003049d6bf3fb9 30-31
+aulas/aula-09-github/pratica.md
+  s_3d6ee04a66b39d::t_003049d6bf3fb9 35-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ebd79880af24256599bbc031582a275919cad456",
+  "prompts": {},
+  "sessions": {
+    "s_3d6ee04a66b39d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26ad2d05-6dda-4a90-a9e9-356683292e32",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
