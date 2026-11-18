@@ -1,0 +1,44 @@
+aulas/aula-10-github-actions/pratica.md
+  s_4668ee739be873::t_8a5dfd59b11d98 7
+  s_4668ee739be873::t_e587e2a3b5b6ae 5,19,58,77,90,94-114,122
+  s_4668ee739be873::t_977b5a257f80af 6
+aulas/aula-10-github-actions/README.md
+  s_4668ee739be873::t_8a5dfd59b11d98 15-18,103
+  s_4668ee739be873::t_8880f1797c5348 99,115-118
+  s_4668ee739be873::t_e587e2a3b5b6ae 9-14,19-20,86,97,104-114,120
+  s_4668ee739be873::t_bf07ae5f2862fd 98,119
+README.md
+  s_4668ee739be873::t_e587e2a3b5b6ae 37
+  s_4668ee739be873::t_8a5dfd59b11d98 27,40
+  s_4668ee739be873::t_2f528742a7ccca 41
+tools/slides/README.md
+  s_4668ee739be873::t_e587e2a3b5b6ae 58-59
+  s_4668ee739be873::t_8a5dfd59b11d98 60
+organizacao/formato-da-live.md
+  s_4668ee739be873::t_e587e2a3b5b6ae 19
+  s_4668ee739be873::t_8a5dfd59b11d98 18
+aulas/aula-10-github-actions/aula-extra-ia/README.md
+  s_4668ee739be873::t_8a5dfd59b11d98 7,13-18,74
+  s_4668ee739be873::t_8880f1797c5348 3
+aulas/aula-10-github-actions/aula-extra-ia/slides/aula-extra.json
+  s_4668ee739be873::t_8a5dfd59b11d98 12,83,88
+aulas/aula-10-github-actions/slides/aula-10.json
+  s_4668ee739be873::t_eb0ddcec7db4ba 6,8-9,55,60,72,102,112,117,125,130,141,207,214,218-219,230,233,238,242-243,245-246,251,259,292,306,315,321,334-335,343,348,354,358,364,366-368,372-373,378,384,387,400-409,411-423,433-437,449
+  s_4668ee739be873::t_8a5dfd59b11d98 7,10,29-32,35,186,191,193-194,202,393,395,410,424-432
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c7cb9ec9285934a1fd727541f996ccb0599b5dc4",
+  "prompts": {},
+  "sessions": {
+    "s_4668ee739be873": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3410077c-4192-4b2e-a4c1-310856b96f05",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
