@@ -1,0 +1,24 @@
+aulas/aula-10-github-actions/aula-extra-ia/README.md
+  s_4668ee739be873::t_8ad81fd8eadae5 88-95
+  s_4668ee739be873::t_be08f7bf64d456 43,63,65-75,77,79,82,86,98,100,102,107,109,113,118,123,125,127,129,153,162
+  s_4668ee739be873::t_175cffe26bfdee 76,78,80-81,83-85,87,96-97,99,101,103-106,108,110-112,114-117,119-122,124,126,128,130-149,155,157
+aulas/aula-10-github-actions/aula-extra-ia/slides/aula-extra.json
+  s_4668ee739be873::t_175cffe26bfdee 38,66
+  s_4668ee739be873::t_be08f7bf64d456 12,52,61,65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c33cd1488b1e07d8de493cab6d8b667a9e623ac1",
+  "prompts": {},
+  "sessions": {
+    "s_4668ee739be873": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3410077c-4192-4b2e-a4c1-310856b96f05",
+        "model": "claude-fable-5-2"
+      },
+      "human_author": "vrn <vinicius.navarro@matera.com>"
+    }
+  }
+}
