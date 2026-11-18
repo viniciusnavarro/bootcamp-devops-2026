@@ -9,7 +9,7 @@
    "bloco": "abertura",
    "titulo": "Aula Extra",
    "subtitulo": "IA e DevOps: saber o que pedir",
-   "notas": "⏱ 0 min — Troque para este deck às 20:50, vindo do slide 'AULA EXTRA' da Aula 10. Máquina limpa da demo pronta (CLI de IA autenticada, conta GitHub de demonstração, nenhum token visível), vídeo de backup à mão. Dupla: um narra, outro digita.",
+   "notas": "⏱ 0 min — Troque para este deck às 20:50, vindo do slide 'AULA EXTRA' da Aula 10. VM da demo zerada com ~/reset-demo.sh (CLI de IA autenticada, nenhum token visível; passo a passo no README da aula extra), prompt-detalhado.txt aberto para mostrar e copiar, repositório de um aluno aberto no navegador, vídeo de backup à mão. Dupla: um narra, outro digita.",
    "minutos": 0
   },
   {
@@ -22,7 +22,7 @@
    ],
    "bullets": [
     "Agora, ao vivo: vamos pedir isso a uma IA que roda no terminal",
-    "Duas vezes — de dois jeitos diferentes"
+    "Um único pedido — escrito com o vocabulário destas dez aulas"
    ],
    "destaque": "💬 Enquete no chat: vocês levaram 10 aulas para construir esse projeto. Quanto tempo uma IA levaria?",
    "notas": "⏱ 3 min — Faça a chamada: 'Vocês levaram 10 aulas para construir esse projeto. Alguém quer chutar quanto tempo uma IA levaria?' Deixe a enquete rolar e leia alguns chutes em voz alta. Anuncie: agora, ao vivo, um único prompt numa CLI de IA. Avance para o próximo slide com o pedido."
@@ -30,41 +30,43 @@
   {
    "tipo": "conteudo",
    "bloco": "parte1",
-   "titulo": "Prompt 1 — o pedido simples",
+   "minutos": 4,
+   "titulo": "O pedido: uma especificação",
    "bullets": [
-    "Linguagem natural, com o vocabulário do bootcamp — e pedindo a prova"
+    "65 linhas: os 11 arquivos, nomes, caminhos, mensagens `[OK]`/`[FALHA]`, `set -e`, `nginx:alpine`, serviço `visitas`, `ci.yml`",
+    "E a **prova**: pipeline verde, teste quebrado de propósito, primeiro commit"
    ],
-   "codigo": "Crie um projeto chamado meu-projeto-devops com scripts em bash:\n- um build que gera uma pagina index.html com a data do build;\n- um teste que verifica a pagina e falha com codigo de saida diferente de zero se ela estiver errada;\n- um deploy que copia a pagina para uma pasta de \"producao\";\n- uma pipeline que roda build, teste e deploy nessa ordem e para no primeiro erro.\nInclua um Dockerfile com nginx para servir a pagina, um compose com o site e um redis,\ne um workflow do GitHub Actions que roda build e teste a cada push.\nRode a pipeline para provar que funciona e depois quebre o teste de proposito\npara mostrar que o deploy nao acontece. Por fim, inicie o repositorio git e faca o primeiro commit.",
-   "notas": "⏱ 7 min — Cole o prompt simples (prompt-simples.txt) e narre enquanto a IA cria os arquivos: 'olha, ela escolheu uma pasta dist', 'o teste dela tem cinco verificações'. Deixe a prova rodar: pipeline verde, teste quebrado sem deploy, commit. Celebre: funcionou! Avance para a comparação.",
-   "minutos": 7
+   "codigo": "4. scripts/test.sh: imprime \"[TEST] Verificando a aplicacao...\";\n   se grep -q \"Bootcamp DevOps\" .../app/index.html der certo,\n   imprime \"[TEST] OK - conteudo esperado encontrado.\"; senao\n   imprime \"[TEST] FALHOU - ...\" e termina com exit 1.",
+   "destaque": "Cada linha desse pedido é algo que vocês aprenderam em dez aulas.",
+   "rodape": "Trecho resumido. Prompt completo em aulas/aula-10-github-actions/aula-extra-ia/prompt-detalhado.txt — mostre na tela com zoom.",
+   "notas": "⏱ 4 min — Mostre o prompt-detalhado.txt na tela e dê zoom em 2 ou 3 trechos: as mensagens [OK]/[FALHA] do health check, o grep -q do teste, o serviço visitas do compose. Pergunte: 'reconhecem isso?' Frase-chave: 'cada linha desse pedido é algo que vocês aprenderam aqui'. Quem não fez as 10 aulas não saberia escrever esse pedido. Avance para rodar."
   },
   {
    "tipo": "conteudo",
    "bloco": "parte1",
-   "titulo": "Funcionou… mas é o nosso projeto?",
+   "minutos": 7,
+   "titulo": "Ao vivo: a IA constrói e prova",
    "bullets": [
-    "Pasta `dist/` em vez de `app/`; produção dentro do projeto em vez de `~/producao`",
-    "Título \"Meu Projeto DevOps\"; mensagens `[build]`/`[test]`; cinco verificações no teste",
-    "`nginx:1.27-alpine`; serviço `redis` com volume e `restart`; workflow em qualquer push",
-    "`.gitignore` e README que ninguém pediu"
+    "Ela **pede licença** antes de criar arquivos e rodar comandos — quem decide é a gente",
+    "A prova roda na tela: **pipeline verde**, teste quebrado **sem deploy**, commit"
    ],
-   "destaque": "💬 Interação: é o nosso projeto? O que está diferente? Digitem no chat.",
-   "notas": "⏱ 5 min — Antes de tudo, diga: pipeline verde, teste barrando o deploy, commit — em um minuto. Funcionou. Agora abra o projeto da IA ao lado do projeto de um aluno e pergunte: 'é o nosso projeto?' Vá apontando as diferenças conforme o chat responde. Mensagem: nada disso está errado — a IA decidiu sozinha porque a gente não disse. Quem não fez as 10 aulas não veria diferença nenhuma.",
-   "minutos": 5
+   "codigo": "cd ~\nclaude                      # cole a especificacao e de Enter\n\nls ~/meu-projeto-devops ~/meu-projeto-devops/scripts\ncat ~/meu-projeto-devops/scripts/test.sh",
+   "rodape": "No ensaio: 55 segundos, sem contar as autorizações.",
+   "notas": "⏱ 7 min — Na VM da demo: cd ~ e claude — sem criar pasta, porque a especificação já diz onde o projeto mora (~/meu-projeto-devops). Confirme que confia na pasta, cole o prompt e dê Enter. A IA pede autorização para criar arquivos e rodar comandos: aprove com a opção que não pergunta de novo ('ela pede licença; quem decide é a gente'). Narre enquanto ela trabalha: 'criou o build.sh', 'agora rodou a pipeline', 'olha o teste falhando de propósito — e o deploy não rodou'. Celebre o verde e o commit. Saia com /exit e mostre o ls e o cat do test.sh. Se travar, use o vídeo de backup; se o tempo apertar, claude --dangerously-skip-permissions (só nesta VM descartável)."
   },
   {
    "tipo": "conteudo",
    "bloco": "parte1",
-   "titulo": "Prompt 2 — a especificação",
+   "minutos": 5,
+   "titulo": "É o nosso projeto?",
    "bullets": [
-    "63 linhas: os 11 arquivos, nomes, caminhos, mensagens `[OK]`/`[FALHA]`, `set -e`, `grep -q`, `nginx:alpine`, serviço `visitas`, `ci.yml`",
-    "Resultado (ensaiado): **igual ao projeto da turma** — até o `test.sh`",
-    "Mesma IA, mesmo tempo. Mudou só uma coisa: **o pedido**"
+    "Os mesmos **11 arquivos**, com os mesmos nomes e caminhos",
+    "As mesmas mensagens: `[BUILD]`, `[TEST]`, `[DEPLOY]`, `[OK]`/`[FALHA]`",
+    "`nginx:alpine`, serviço `visitas` e o `ci.yml` da prática de hoje",
+    "O `test.sh` da IA ao lado do de vocês: **idêntico**"
    ],
-   "destaque": "A diferença entre os dois prompts é exatamente o que vocês aprenderam em dez aulas.",
-   "rodape": "Prompt completo em aulas/aula-10-github-actions/aula-extra-ia/prompt-detalhado.txt — mostre na tela e dê zoom em 2 ou 3 trechos.",
-   "notas": "⏱ 4 min — Mostre o prompt detalhado na tela (zoom nas mensagens [OK]/[FALHA], no grep -q, no serviço visitas) e, ao lado, o resultado já ensaiado: o test.sh da IA idêntico ao da turma. Frase-chave: 'a diferença entre os dois prompts é o que vocês aprenderam aqui'. Se sobrar tempo, rode-o ao vivo.",
-   "minutos": 4
+   "destaque": "💬 Interação: abram o `test.sh` de vocês. Está igual? O que está diferente? Digitem no chat.",
+   "notas": "⏱ 5 min — Abra o test.sh da IA no terminal ao lado do test.sh de um aluno no navegador (repositório no GitHub) e pergunte: 'é o nosso projeto?' Passe por mais um ou dois arquivos (compose.yaml, ci.yml). Mensagem: saiu igual porque o pedido dizia exatamente o que a gente queria — e a gente só sabia o que queria porque construiu isso à mão. Se aparecer alguma diferença, ótimo: é a deixa para a virada."
   },
   {
    "tipo": "conteudo",
