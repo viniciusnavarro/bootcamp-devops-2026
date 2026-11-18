@@ -15,6 +15,8 @@ Para garantir energia alta e cumprimento rigoroso do horário, o conteúdo é di
 | 21:20 – 21:45 | 25 min | Perguntas & Respostas (interação direta com o chat) |
 | 21:45 | — | Encerramento pontual |
 
+**Exceção — Aula 10 (18/11, termina às 21:35):** 19:30 abertura e revisão · 19:40 Parte 1 (30 min) · 20:10 intervalo curto (5 min) · 20:15 prática (35 min) · 20:50 aula extra de IA (25 min) · 21:15 encerramento + Q&A (20 min). Prática + aula extra somam 1 hora.
+
 ## Revisão com gancho (a partir da Aula 02)
 
 Toda aula, a partir da segunda, abre a Parte 1 com uma **revisão de ~5 minutos** do que foi visto no dia anterior. A revisão deve sempre terminar com uma **deixa para o conteúdo do dia** (o "gancho"). Os ganchos sugeridos estão no README de cada aula, na seção *"O que levamos para a próxima aula"* da aula anterior.

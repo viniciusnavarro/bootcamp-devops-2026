@@ -6,6 +6,18 @@
 >
 > 📽️ Slides desta aula: [`slides/aula-10.odp`](slides/aula-10.odp) (roteiro editável em [`slides/aula-10.json`](slides/aula-10.json) — veja [tools/slides](../../tools/slides/README.md)). Deck da [aula extra](aula-extra-ia/README.md): [`aula-extra-ia/slides/aula-extra.odp`](aula-extra-ia/slides/aula-extra.odp).
 
+## 🕒 Agenda desta aula (diferente das outras: termina às 21:35)
+
+| Horário | Bloco | Minutos |
+|---------|-------|---------|
+| 19:30 | Abertura e revisão da Aula 09 | 10 |
+| 19:40 | **Parte 1** — GitHub Actions: a esteira dentro do repositório | 30 |
+| 20:10 | Intervalo ☕ (curto!) | 5 |
+| 20:15 | **Parte 2** — Mão na massa: sua primeira pipeline | 35 |
+| 20:50 | **Aula extra** — a surpresa final 🎁 | 25 |
+| 21:15 | Encerramento + Perguntas & Respostas | 20 |
+| 21:35 | Fim da live | — |
+
 ## 🔁 Revisão da Aula 09 (5 min)
 
 - Git local + GitHub remoto: `push`, `pull`, e o fluxo profissional branch → PR → review → merge.
@@ -71,18 +83,10 @@ Cada peça dessa frase você aprendeu numa aula: Linux (02–04), pipeline (05),
 
 E quando a pipeline precisa de uma senha (um registro de imagens — *registry* —, a nuvem)? **Nunca no YAML!** O GitHub tem um cofre: *Settings → Secrets and variables → Actions*. No workflow, usa-se `${{ secrets.MINHA_SENHA }}` — o valor nunca aparece nos logs.
 
-### 5. Próximos passos da jornada
+### 5. Próximos passos: K8s e DevSecOps
 
 - **Kubernetes (K8s):** o compose "adulto" — orquestra containers em **muitas máquinas**, com auto-recuperação e escala automática. É o padrão da indústria (e o dia a dia na Matera).
 - **DevSecOps:** segurança desde o dia zero — scanners de vulnerabilidade e de segredos **como stages da pipeline**.
-- **Infraestrutura como Código (Terraform), observabilidade (métricas, logs, traces), nuvem (AWS/Azure/GCP)** — cada um dá um bootcamp inteiro.
-- **Continue no Linux todos os dias:** o guia [continuando com Linux](../../recursos/continuando-com-linux.md) mostra como manter o terminal na sua rotina — na VM, com WSL2 no Windows ou no Terminal do Mac — com um desafio de 30 dias. E a [cola de comandos](../../recursos/cheat-sheet-terminal.md) para ter sempre à mão.
-
-### 6. Carreira e comunidade
-
-- Seu diferencial ao final de hoje: um repositório público com **projeto funcional e pipeline verde** — mais do que muito candidato júnior tem.
-- Compartilhe o link do seu repositório com quem quiser — ele é o seu portfólio — e continue nos canais da comunidade.
-- Continuem nos canais da comunidade; as portas do Instituto Matera seguem abertas.
 
 ---
 
@@ -90,10 +94,29 @@ E quando a pipeline precisa de uma senha (um registro de imagens — *registry* 
 
 👉 Siga o **[pratica.md](pratica.md)**: criar o workflow, ver a primeira pipeline verde, quebrar e consertar (blameless até o fim!).
 
-E no bloco final (21:20), no lugar do Q&A de sempre, uma **[aula extra aninhada](aula-extra-ia/README.md)** — a surpresa final, com roteiro, prompt e deck próprios. 🤖🎁
+São **35 minutos**: o badge no README e o desafio bônus ficam para casa (estão no fim do `pratica.md`).
+
+Às **20:50**, antes do Q&A final, uma **[aula extra aninhada](aula-extra-ia/README.md)** — a surpresa final, com roteiro, prompt e deck próprios. 🤖🎁
 
 ---
 
-## O que levamos daqui para a vida 🔗
+## Encerramento e Perguntas & Respostas (21:15–21:35)
+
+### A jornada continua
+
+- **Infraestrutura como Código (Terraform), observabilidade (métricas, logs, traces), nuvem (AWS/Azure/GCP)** — cada um dá um bootcamp inteiro.
+- **Continue no Linux todos os dias:** o guia [continuando com Linux](../../recursos/continuando-com-linux.md) mostra como manter o terminal na sua rotina — na VM, com WSL2 no Windows ou no Terminal do Mac — com um desafio de 30 dias. E a [cola de comandos](../../recursos/cheat-sheet-terminal.md) para ter sempre à mão.
+
+### Carreira e comunidade
+
+- Seu diferencial ao final de hoje: um repositório público com **projeto funcional e pipeline verde** — mais do que muito candidato júnior tem.
+- Compartilhe o link do seu repositório com quem quiser — ele é o seu portfólio.
+- Continuem nos canais da comunidade; as portas do Instituto Matera seguem abertas.
+
+### Perguntas & Respostas (10 min)
+
+O último Q&A do bootcamp: dúvidas da aula, da demo de IA e dos próximos passos.
+
+### O que levamos daqui para a vida 🔗
 
 > "Vocês chegaram sem saber o que era um terminal. Saem com Linux, scripts, Git, Docker, GitHub e uma esteira de CI rodando num projeto público de vocês. O loop do DevOps não termina — ele recomeça: **planejem** o próximo aprendizado, **codem**, **testem**, **monitorem** a evolução de vocês. A comunidade fica. Obrigado, e até a próxima! 💙"

@@ -1,21 +1,21 @@
 # Aula Extra — IA e DevOps: o que importa é saber o que pedir 🎁
 
-> **Aula extra aninhada na Aula 10**, no bloco final (**18/11, 21:20–21:45**, no lugar do Q&A de sempre). Para a turma, é "a surpresa final": não anunciar o conteúdo antes. Para a equipe, é uma aula com roteiro, prompt e deck próprios.
+> **Aula extra aninhada na Aula 10**, logo depois da prática (**18/11, 20:50–21:15**, antes do Q&A final). Para a turma, é "a surpresa final": não anunciar o conteúdo antes. Para a equipe, é uma aula com roteiro, prompt e deck próprios.
 >
 > 📽️ Slides: [`slides/aula-extra.odp`](slides/aula-extra.odp) (roteiro editável em [`slides/aula-extra.json`](slides/aula-extra.json)). Prompts da demo: [`prompt-simples.txt`](prompt-simples.txt) e [`prompt-detalhado.txt`](prompt-detalhado.txt).
 >
-> ⏱ A prática da Aula 10 (45 min) precisa terminar no horário: se atrasar, o badge (Passo 4 da prática) vira missão de casa.
+> ⏱ Na Aula 10, prática + aula extra somam **1 hora** (20:15–21:15): 35 min de prática e 25 min aqui. A prática precisa terminar às 20:50 — por isso o badge e o desafio bônus já são missão de casa. Depois da aula extra, o deck da Aula 10 fecha a live com encerramento e Q&A (21:15–21:35).
 
 ## Agenda (25 min)
 
 | Horário | Bloco | Minutos |
 |---------|-------|---------|
-| 21:20 | A chamada + enquete no chat | 3 |
-| 21:23 | Prompt 1, ao vivo: o pedido simples (9 linhas) | 7 |
-| 21:30 | Funcionou… mas é o nosso projeto? Comparação lado a lado | 5 |
-| 21:35 | Prompt 2: a especificação — o resultado igual ao da turma | 4 |
-| 21:39 | A virada: a turma revisa a IA + mensagem pedagógica | 6 |
-| 21:45 | Encerramento da Aula 10 (de volta ao deck da Aula 10) | — |
+| 20:50 | A chamada + enquete no chat | 3 |
+| 20:53 | Prompt 1, ao vivo: o pedido simples (9 linhas) | 7 |
+| 21:00 | Funcionou… mas é o nosso projeto? Comparação lado a lado | 5 |
+| 21:05 | Prompt 2: a especificação — o resultado igual ao da turma | 4 |
+| 21:09 | A virada: a turma revisa a IA + mensagem pedagógica | 6 |
+| 21:15 | Encerramento da Aula 10 (de volta ao deck da Aula 10, com Q&A, até 21:35) | 20 |
 
 ## A ideia
 
@@ -71,7 +71,7 @@ O [`prompt-detalhado.txt`](prompt-detalhado.txt) descreve o projeto da turma ite
 3. **Prompt 1 ao vivo (7 min):** cole o pedido simples e narre. Celebre o verde: *funcionou*.
 4. **Comparação (5 min):** abra o projeto da IA ao lado do projeto de um aluno. Pergunte ao chat: "é o nosso projeto?" — e vá apontando as diferenças da tabela acima. A turma vai perceber que *sabe* ver a diferença.
 5. **Prompt 2 (4 min):** mostre a especificação e o resultado ensaiado, idêntico ao da turma. A frase-chave: **"a diferença entre os dois prompts é o que vocês aprenderam aqui."**
-6. **A virada (6 min):** "a IA errou algo? o que vocês fariam diferente?" — deixe a turma revisar a IA. Feche com a mensagem pedagógica acima, o encerramento e o aviso de que o certificado será enviado pela organização.
+6. **A virada (6 min):** "a IA errou algo? o que vocês fariam diferente?" — deixe a turma revisar a IA. Feche com a mensagem pedagógica acima e, às 21:15, volte ao deck da Aula 10 para o encerramento (próximos passos, carreira e o aviso de que o certificado será enviado pela organização).
 
 ## Checklist de riscos
 

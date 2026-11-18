@@ -9,7 +9,7 @@
    "bloco": "abertura",
    "titulo": "Aula Extra",
    "subtitulo": "IA e DevOps: saber o que pedir",
-   "notas": "⏱ 0 min — Troque para este deck às 21:20, vindo do slide 'AULA EXTRA' da Aula 10. Máquina limpa da demo pronta (CLI de IA autenticada, conta GitHub de demonstração, nenhum token visível), vídeo de backup à mão. Dupla: um narra, outro digita.",
+   "notas": "⏱ 0 min — Troque para este deck às 20:50, vindo do slide 'AULA EXTRA' da Aula 10. Máquina limpa da demo pronta (CLI de IA autenticada, conta GitHub de demonstração, nenhum token visível), vídeo de backup à mão. Dupla: um narra, outro digita.",
    "minutos": 0
   },
   {
@@ -80,12 +80,12 @@
     "**Quem domina os fundamentos multiplica a produtividade com IA**",
     "Quem não domina só copia e cola — e não sabe consertar quando quebra (e sempre quebra!)"
    ],
-   "notas": "⏱ 6 min — A virada: pergunte ao chat 'a IA errou algo? o que vocês fariam diferente?' e deixe a turma revisar a IA. É o momento em que eles percebem que sabem. Depois feche com os três pontos, em tom energizante, não desanimador (o impacto inicial é o 'uau'; o fecho é 'vocês sabem'): 1) eles sabem julgar o resultado; 2) o trabalho mudou de digitar para entender, revisar, decidir e operar; 3) fundamentos multiplicam a produtividade com IA, sem eles é só copiar e colar. Então siga para o encerramento."
+   "notas": "⏱ 6 min — A virada: pergunte ao chat 'a IA errou algo? o que vocês fariam diferente?' e deixe a turma revisar a IA. É o momento em que eles percebem que sabem. Depois feche com os três pontos, em tom energizante, não desanimador (o impacto inicial é o 'uau'; o fecho é 'vocês sabem'): 1) eles sabem julgar o resultado; 2) o trabalho mudou de digitar para entender, revisar, decidir e operar; 3) fundamentos multiplicam a produtividade com IA, sem eles é só copiar e colar. Então volte ao deck da Aula 10 para o encerramento (21:15)."
   },
   {
    "tipo": "encerramento",
    "bloco": "fechamento",
-   "notas": "⏱ 0 min — Volte ao deck da Aula 10 para o slide 'O que levamos para a vida' e o encerramento.",
+   "notas": "⏱ 0 min — 21:15: volte ao deck da Aula 10 para o encerramento (próximos passos, carreira, Perguntas & Respostas e 'O que levamos para a vida'), que vai até 21:35.",
    "minutos": 0
   }
  ]
