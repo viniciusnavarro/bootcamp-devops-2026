@@ -55,4 +55,6 @@ Converte os 10 `.odp` em PDF e junta na ordem das aulas (requer LibreOffice e `p
 | Parte 1 — conceitos | 40 (45 na Aula 01) |
 | Intervalo | 15 |
 | Parte 2 — prática | 45 |
-| Perguntas & Respostas (Aula 10: a surpresa final) | 25 |
+| Perguntas & Respostas | 25 |
+
+A **Aula 10** foge do padrão (termina às 21:35): Parte 1 em 30, intervalo 5, prática 35, aula extra 25 (deck próprio) e encerramento + Q&A 20.

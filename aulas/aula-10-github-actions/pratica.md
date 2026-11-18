@@ -2,7 +2,9 @@
 
 **Objetivo:** fazer o GitHub buildar e testar seu projeto **automaticamente a cada push** — a pipeline da Aula 05, agora executada por um robô de verdade.
 
-**Onde:** terminal conectado à VM **via SSH** (necessário para colar o badge) + navegador (GitHub).
+**Onde:** terminal conectado à VM **via SSH** (para colar o workflow no `vi`) + navegador (GitHub).
+
+**Tempo em aula:** 35 minutos (20:15–20:50). O badge no README e o desafio bônus ficam [para casa](#para-casa-).
 
 ## Passo 1 — Crie o arquivo do workflow
 
@@ -14,7 +16,7 @@ mkdir -p .github/workflows
 vi .github/workflows/ci.yml
 ```
 
-Conteúdo (indentação com 2 espaços!):
+Para ganhar tempo, **cole** o conteúdo abaixo: no `vi`, digite `:set paste`, Enter, `i` e cole (o `:set paste` evita que as linhas fiquem em "escadinha" — veja a [micro aula de vi](../../recursos/micro-aula-vi.md)). Indentação com 2 espaços, sem Tab:
 
 ```yaml
 name: CI
@@ -53,20 +55,7 @@ No navegador: seu repositório → aba **Actions**. Você verá o workflow `CI` 
 
 Resultado esperado: ✅ verde, com os mesmos `[BUILD] OK` e `[TEST] OK` que você via na VM — só que executados numa máquina do GitHub, disparados pelo seu push. **Essa é a Integração Contínua.**
 
-## Passo 4 — O selo de qualidade no README (se der tempo; senão, missão de casa)
-
-Na página do workflow: botão `···` → **Create status badge** → copie o markdown. Na VM:
-
-```bash
-vi README.md    # cole o badge na primeira linha
-git add README.md
-git commit -m "adiciona badge de status da CI"
-git push
-```
-
-Atualize a página do repositório: um selo **passing** no topo. Portfólio com prova de qualidade automática. 😎
-
-## Passo 5 — Veja a pipeline te proteger num PR 💥
+## Passo 4 — Veja a pipeline te proteger num PR 💥
 
 O gran finale: vamos tentar integrar um código quebrado — pelo fluxo da Aula 09 — e ver a esteira barrar.
 
@@ -85,7 +74,7 @@ git push -u origin quebra-proposital
 
 No navegador, abra o **Pull Request** dessa branch. Aguarde alguns segundos e observe: o check **CI / build-e-teste** fica ❌ **vermelho, dentro do PR**. O GitHub avisa que o merge não é seguro — **antes** de o erro chegar à main (o botão de merge continua ativo: aqui é você quem decide não clicar; em projetos reais, uma regra de proteção da branch bloqueia o botão). Clique em **Details** e encontre a linha exata do `[TEST] FALHOU`.
 
-## Passo 6 — Conserte e veja o PR ficar verde
+## Passo 5 — Conserte e veja o PR ficar verde
 
 ```bash
 vi scripts/build.sh     # desfaça a mudança
@@ -98,9 +87,30 @@ O PR reexecuta a pipeline sozinho → ✅ verde → **Merge pull request**. Na V
 
 **Ciclo DevOps completo, de ponta a ponta, no seu projeto.** 🏆
 
-## Passo 7 — Guarde o seu portfólio 🏅
+## Passo 6 — Guarde o seu portfólio 🏅
 
 Anote o link do seu repositório e tire um print da pipeline verde na aba Actions: esse é o seu portfólio, construído por você em 10 aulas. O certificado de participação será enviado pelo Instituto Matera, conforme as orientações da organização.
+
+## Para casa 🏠
+
+A prática em aula tem 35 minutos; estes dois ficam para você fazer com calma depois.
+
+### O selo de qualidade no README
+
+Na página do workflow (aba **Actions** → `CI`): botão `···` → **Create status badge** → copie o markdown. Na VM:
+
+```bash
+vi README.md    # cole o badge na primeira linha
+git add README.md
+git commit -m "adiciona badge de status da CI"
+git push
+```
+
+Atualize a página do repositório: um selo **passing** no topo. Portfólio com prova de qualidade automática. 😎
+
+### Desafio bônus: transforme o aviso em bloqueio 🔒
+
+No repositório: *Settings → Rules → Rulesets → New branch ruleset* → aplique à `main` e marque **Require status checks to pass**. Depois, abra um PR com a pipeline vermelha e veja o botão de merge desativado. Em times reais isso é regra, não opção.
 
 ## Deu errado? 😥
 
@@ -109,6 +119,7 @@ Anote o link do seu repositório e tire um print da pipeline verde na aba Action
 | A aba Actions não mostra nada | O arquivo não está em `.github/workflows/ci.yml` exato — confira com `ls -la .github/workflows/` |
 | `Permission denied` no step Build | Os scripts perderam o `+x`? Rode `git update-index --chmod=+x scripts/*.sh`, commit e push |
 | Erro de YAML no workflow | Indentação — compare com o modelo; 2 espaços, sem Tab |
+| Colei o workflow e as linhas ficaram em "escadinha" | O `vi` indentou o que foi colado — saia sem salvar (`:q!`), abra de novo, `:set paste`, Enter, `i` e cole |
 | Pipeline verde mas badge não aparece | O markdown do badge aponta para a branch certa? Regenere pelo botão *Create status badge* |
 | `refusing to allow a Personal Access Token to create or update workflow` no push | O token não tem a permissão **Workflows**. Edite-o em *Settings → Developer settings → Fine-grained tokens* (ou gere outro com *Contents* + *Workflows: Read and write*) e repita o `git push`. Se o Git guardou o token antigo, apague a linha dele em `~/.git-credentials` com o `vi` para ele pedir o novo |
 
