@@ -66,6 +66,13 @@ git remote add origin https://github.com/SEU-USUARIO/meu-projeto-devops.git
 git remote -v
 ```
 
+- **Caso tenha informado a url errada para o origin** Se no comando anterior deveria informar a url do repositorio https://github.com/SEU-USUARIO/meu-projeto-devops.git, mas acabou informando https://github.com/SEU-USUARIO/meu-outro-java.git o comando git remote -v vai informar um repositorio diferente do que deveria ser o alvo no github. nesse caso altere usando:
+
+```bash
+git remote set-url origin https://github.com/SEU-USUARIO/meu-projeto-devops.git,
+git remote -v
+```
+
 ## Passo 5 — O primeiro push! 🚀
 
 ```bash
