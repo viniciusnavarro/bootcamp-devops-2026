@@ -9,7 +9,7 @@
    "bloco": "abertura",
    "titulo": "Aula Extra",
    "subtitulo": "IA e DevOps: saber o que pedir",
-   "notas": "⏱ 0 min — Troque para este deck às 20:50, vindo do slide 'AULA EXTRA' da Aula 10. Máquina limpa da demo pronta (CLI de IA autenticada, conta GitHub de demonstração, nenhum token visível), vídeo de backup à mão. Dupla: um narra, outro digita.",
+   "notas": "⏱ 0 min — Troque para este deck às 20:50, vindo do slide 'AULA EXTRA' da Aula 10. VM da demo zerada com ~/reset-demo.sh (CLI de IA autenticada, nenhum token visível; passo a passo no README da aula extra), vídeo de backup à mão. Dupla: um narra, outro digita.",
    "minutos": 0
   },
   {
@@ -35,7 +35,7 @@
     "Linguagem natural, com o vocabulário do bootcamp — e pedindo a prova"
    ],
    "codigo": "Crie um projeto chamado meu-projeto-devops com scripts em bash:\n- um build que gera uma pagina index.html com a data do build;\n- um teste que verifica a pagina e falha com codigo de saida diferente de zero se ela estiver errada;\n- um deploy que copia a pagina para uma pasta de \"producao\";\n- uma pipeline que roda build, teste e deploy nessa ordem e para no primeiro erro.\nInclua um Dockerfile com nginx para servir a pagina, um compose com o site e um redis,\ne um workflow do GitHub Actions que roda build e teste a cada push.\nRode a pipeline para provar que funciona e depois quebre o teste de proposito\npara mostrar que o deploy nao acontece. Por fim, inicie o repositorio git e faca o primeiro commit.",
-   "notas": "⏱ 7 min — Cole o prompt simples (prompt-simples.txt) e narre enquanto a IA cria os arquivos: 'olha, ela escolheu uma pasta dist', 'o teste dela tem cinco verificações'. Deixe a prova rodar: pipeline verde, teste quebrado sem deploy, commit. Celebre: funcionou! Avance para a comparação.",
+   "notas": "⏱ 7 min — Na VM da demo, mostre criando: mkdir ~/demo-simples, cd ~/demo-simples, claude. Confirme que confia na pasta, cole o prompt simples (prompt-simples.txt) e dê Enter. A IA pede autorização para criar arquivos e rodar comandos: aprove com a opção que não pergunta de novo ('ela pede licença; quem decide é a gente'). Narre enquanto ela cria: 'olha, ela escolheu uma pasta dist'. Deixe a prova rodar: pipeline verde, teste quebrado sem deploy, commit. Celebre: funcionou! Saia com /exit e avance para a comparação.",
    "minutos": 7
   },
   {
@@ -49,7 +49,7 @@
     "`.gitignore` e README que ninguém pediu"
    ],
    "destaque": "💬 Interação: é o nosso projeto? O que está diferente? Digitem no chat.",
-   "notas": "⏱ 5 min — Antes de tudo, diga: pipeline verde, teste barrando o deploy, commit — em um minuto. Funcionou. Agora abra o projeto da IA ao lado do projeto de um aluno e pergunte: 'é o nosso projeto?' Vá apontando as diferenças conforme o chat responde. Mensagem: nada disso está errado — a IA decidiu sozinha porque a gente não disse. Quem não fez as 10 aulas não veria diferença nenhuma.",
+   "notas": "⏱ 5 min — Antes de tudo, diga: pipeline verde, teste barrando o deploy, commit — em um minuto. Funcionou. Agora abra o projeto da IA ao lado do projeto de um aluno e pergunte: 'é o nosso projeto?' Vá apontando as diferenças conforme o chat responde — as do slide são de um ensaio; a cada rodada a IA decide um pouco diferente, então aponte o que aparecer na tela. Mensagem: nada disso está errado — a IA decidiu sozinha porque a gente não disse. Quem não fez as 10 aulas não veria diferença nenhuma.",
    "minutos": 5
   },
   {
@@ -58,12 +58,12 @@
    "titulo": "Prompt 2 — a especificação",
    "bullets": [
     "63 linhas: os 11 arquivos, nomes, caminhos, mensagens `[OK]`/`[FALHA]`, `set -e`, `grep -q`, `nginx:alpine`, serviço `visitas`, `ci.yml`",
-    "Resultado (ensaiado): **igual ao projeto da turma** — até o `test.sh`",
+    "Resultado: **igual ao projeto da turma** — até o `test.sh`",
     "Mesma IA, mesmo tempo. Mudou só uma coisa: **o pedido**"
    ],
    "destaque": "A diferença entre os dois prompts é exatamente o que vocês aprenderam em dez aulas.",
-   "rodape": "Prompt completo em aulas/aula-10-github-actions/aula-extra-ia/prompt-detalhado.txt — mostre na tela e dê zoom em 2 ou 3 trechos.",
-   "notas": "⏱ 4 min — Mostre o prompt detalhado na tela (zoom nas mensagens [OK]/[FALHA], no grep -q, no serviço visitas) e, ao lado, o resultado já ensaiado: o test.sh da IA idêntico ao da turma. Frase-chave: 'a diferença entre os dois prompts é o que vocês aprenderam aqui'. Se sobrar tempo, rode-o ao vivo.",
+   "rodape": "Prompt completo em aulas/aula-10-github-actions/aula-extra-ia/prompt-detalhado.txt — mostre na tela, dê zoom em 2 ou 3 trechos e rode.",
+   "notas": "⏱ 4 min — Mostre o prompt detalhado na tela (zoom nas mensagens [OK]/[FALHA], no grep -q, no serviço visitas). Na VM da demo: cd ~ e claude — sem criar pasta, porque a especificação já diz onde o projeto mora (~/meu-projeto-devops). Cole o prompt, aprove as autorizações e, no fim, cat ~/meu-projeto-devops/scripts/test.sh: idêntico ao da turma. Frase-chave: 'a diferença entre os dois prompts é o que vocês aprenderam aqui'. Se travar, use o vídeo de backup.",
    "minutos": 4
   },
   {
